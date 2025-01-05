@@ -5,9 +5,6 @@
 
 A  Flask-based web application that automatically generates customized certificates from a template and Excel data, with Google Drive integration for cloud storage.
 
-### Quick Demo
-[Watch Local Demo](screenshots/recording.mp4)
-
 ## 📸 Application Screenshots
 
 ### Homepage & Main Interface
