@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Certificate Generator</h1>
+            <p class="subtitle">Generate customized certificates with dynamic text placement</p>
+        </header>
+
+        <div class="main-content">
+            <section class="instructions">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Upload a certificate template (PNG/JPG)</li>
+                    <li>Upload Excel file with names in first column</li>
+                    <li>Adjust text position, size, and color</li>
+                    <li>Click generate to create certificates</li>
+                </ol>
+            </section>
+
+            <form id="certificateForm" class="generator-form">
+                <div class="form-group upload-section">
+                    <label for="template">Certificate Template:</label>
+                    <input type="file" id="template" name="template" accept=".png,.jpg,.jpeg" required>
+                    <p class="hint">Recommended size: 1920x1080px</p>
+                </div>
+                
+                <div class="form-group upload-section">
+                    <label for="excel">Excel File with Names:</label>
+                    <input type="file" id="excel" name="excel" accept=".xlsx,.xls" required>
+                    <p class="hint">First column should contain names</p>
+                </div>
+
+                <div class="text-customization">
+                    <h3>Text Settings</h3>
+                    
+                    <div class="form-group position-group">
+                        <label>Text Position:</label>
+                        <div class="position-inputs">
+                            <div class="input-with-label">
+                                <input type="number" name="x_pos" placeholder="X" value="400" required>
+                                <span>X</span>
+                            </div>
+                            <div class="input-with-label">
+                                <input type="number" name="y_pos" placeholder="Y" value="300" required>
+                                <span>Y</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="font_size">Font Size:</label>
+                            <input type="number" id="font_size" name="font_size" value="36" min="8" max="144" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="text_color">Text Color:</label>
+                            <input type="color" id="text_color" name="text_color" value="#000000" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="generate-btn">Generate Certificates</button>
+            </form>
+
+            <div id="preview" class="preview-section"></div>
+            <div id="results" class="results-section"></div>
+            <div id="error" class="error-message"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
