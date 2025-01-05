@@ -2,14 +2,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![Flask](https://img.shields.io/badge/Flask-2.0%2B-lightgrey.svg)](https://flask.palletsprojects.com/)
-[![YouTube Tutorial](https://img.shields.io/badge/YouTube-Tutorial-red.svg)](https://www.youtube.com/watch?v=F_E-y25bC-o)
 
 A  Flask-based web application that automatically generates customized certificates from a template and Excel data, with Google Drive integration for cloud storage.
-
-## 📺 Video Tutorial
-
-### Watch Full Tutorial
-[![Certificate Generator Tutorial](https://img.youtube.com/vi/F_E-y25bC-o/maxresdefault.jpg)](https://www.youtube.com/watch?v=F_E-y25bC-o)
 
 ### Quick Demo
 [Watch Local Demo](screenshots/recording.mp4)
@@ -27,6 +21,10 @@ A  Flask-based web application that automatically generates customized certifica
 
 ### Generated Results
 ![Certificate Output](screenshots/img3.png)
+
+## 📺 Video 
+
+[![Certificate Generator Tutorial](https://img.youtube.com/vi/F_E-y25bC-o/maxresdefault.jpg)](https://www.youtube.com/watch?v=F_E-y25bC-o)
 
 ##  Features
 
